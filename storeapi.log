@@ -1,0 +1,86 @@
+2024-06-18T02:53:43.479Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T02:53:43.481Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T02:53:43.485Z | INFO     | :uvicorn.error:214 - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2024-06-18T02:54:26.280Z | INFO     | :uvicorn.access:481 - 127.0.0.1:60863 - "GET /posts/post HTTP/1.1" 404
+2024-06-18T02:55:00.507Z | DEBUG    | :storeapi.routers.post:36 - SELECT posts.id, posts.body 
+FROM posts
+2024-06-18T02:55:00.514Z | INFO     | :uvicorn.access:481 - 127.0.0.1:60900 - "GET /post HTTP/1.1" 200
+2024-06-18T02:57:02.445Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T02:57:02.447Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T02:57:02.451Z | ERROR    | :uvicorn.error:170 - [Errno 48] error while attempting to bind on address ('127.0.0.1', 8000): address already in use
+2024-06-18T02:57:02.451Z | INFO     | :uvicorn.error:67 - Waiting for application shutdown.
+2024-06-18T02:57:02.452Z | INFO     | :uvicorn.error:76 - Application shutdown complete.
+2024-06-18T02:59:49.377Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T02:59:49.379Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T03:00:20.958Z | DEBUG    | :storeapi.routers.post:34 - Getting all posts
+2024-06-18T03:00:20.960Z | DEBUG    | :storeapi.routers.post:37 - SELECT posts.id, posts.body 
+FROM posts
+2024-06-18T03:00:20.964Z | INFO     | :uvicorn.access:481 - 127.0.0.1:61237 - "GET /post HTTP/1.1" 200
+2024-06-18T03:00:50.185Z | INFO     | :uvicorn.error:258 - Shutting down
+2024-06-18T03:00:50.289Z | INFO     | :uvicorn.error:67 - Waiting for application shutdown.
+2024-06-18T03:00:50.290Z | INFO     | :uvicorn.error:76 - Application shutdown complete.
+2024-06-18T03:00:50.291Z | INFO     | :uvicorn.error:92 - Finished server process [31744]
+2024-06-18T03:00:50.904Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T03:00:50.906Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T03:00:56.215Z | INFO     | :storeapi.routers.post:34 - Getting all posts
+2024-06-18T03:00:56.217Z | DEBUG    | :storeapi.routers.post:37 - SELECT posts.id, posts.body 
+FROM posts
+2024-06-18T03:00:56.219Z | INFO     | :uvicorn.access:481 - 127.0.0.1:61283 - "GET /post HTTP/1.1" 200
+2024-06-18T03:01:48.337Z | INFO     | :uvicorn.error:258 - Shutting down
+2024-06-18T03:01:48.438Z | INFO     | :uvicorn.error:67 - Waiting for application shutdown.
+2024-06-18T03:01:48.440Z | INFO     | :uvicorn.error:76 - Application shutdown complete.
+2024-06-18T03:01:48.441Z | INFO     | :uvicorn.error:92 - Finished server process [32030]
+2024-06-18T03:01:49.054Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T03:01:49.056Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T03:01:55.015Z | INFO     | :uvicorn.error:258 - Shutting down
+2024-06-18T03:01:55.117Z | INFO     | :uvicorn.error:67 - Waiting for application shutdown.
+2024-06-18T03:01:55.118Z | INFO     | :uvicorn.error:76 - Application shutdown complete.
+2024-06-18T03:01:55.119Z | INFO     | :uvicorn.error:92 - Finished server process [32324]
+2024-06-18T03:01:55.668Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T03:01:55.670Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T03:01:58.301Z | INFO     | :uvicorn.error:258 - Shutting down
+2024-06-18T03:01:58.404Z | INFO     | :uvicorn.error:67 - Waiting for application shutdown.
+2024-06-18T03:01:58.404Z | INFO     | :uvicorn.error:76 - Application shutdown complete.
+2024-06-18T03:01:58.405Z | INFO     | :uvicorn.error:92 - Finished server process [32373]
+2024-06-18T03:01:58.930Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T03:01:58.931Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T03:02:22.009Z | INFO     | :storeapi.routers.post:20 - Finding post with id 0
+2024-06-18T03:02:22.011Z | DEBUG    | :storeapi.routers.post:24 - SELECT posts.id, posts.body 
+FROM posts 
+WHERE posts.id = :id_1
+2024-06-18T03:02:22.015Z | INFO     | :uvicorn.access:481 - 127.0.0.1:61384 - "GET /post/0 HTTP/1.1" 404
+2024-06-18T03:04:37.096Z | INFO     | :uvicorn.error:258 - Shutting down
+2024-06-18T03:04:37.198Z | INFO     | :uvicorn.error:67 - Waiting for application shutdown.
+2024-06-18T03:04:37.200Z | INFO     | :uvicorn.error:76 - Application shutdown complete.
+2024-06-18T03:04:37.202Z | INFO     | :uvicorn.error:92 - Finished server process [32400]
+2024-06-18T03:04:37.739Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T03:04:37.741Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T03:05:17.164Z | INFO     | :uvicorn.error:258 - Shutting down
+2024-06-18T03:05:17.267Z | INFO     | :uvicorn.error:67 - Waiting for application shutdown.
+2024-06-18T03:05:17.268Z | INFO     | :uvicorn.error:76 - Application shutdown complete.
+2024-06-18T03:05:17.269Z | INFO     | :uvicorn.error:92 - Finished server process [33121]
+2024-06-18T03:05:17.826Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T03:05:17.828Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T03:05:53.004Z | INFO     | :uvicorn.error:258 - Shutting down
+2024-06-18T03:05:53.107Z | INFO     | :uvicorn.error:67 - Waiting for application shutdown.
+2024-06-18T03:05:53.108Z | INFO     | :uvicorn.error:76 - Application shutdown complete.
+2024-06-18T03:05:53.108Z | INFO     | :uvicorn.error:92 - Finished server process [33342]
+2024-06-18T03:05:53.653Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T03:05:53.655Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T03:06:17.507Z | INFO     | :uvicorn.error:258 - Shutting down
+2024-06-18T03:06:17.609Z | INFO     | :uvicorn.error:67 - Waiting for application shutdown.
+2024-06-18T03:06:17.611Z | INFO     | :uvicorn.error:76 - Application shutdown complete.
+2024-06-18T03:06:17.612Z | INFO     | :uvicorn.error:92 - Finished server process [33516]
+2024-06-18T03:06:18.171Z | INFO     | :storeapi.main:18 - Hello world
+2024-06-18T03:06:18.173Z | INFO     | :uvicorn.error:62 - Application startup complete.
+2024-06-18T03:07:43.982Z | INFO     | :uvicorn.access:481 - 127.0.0.1:61738 - "POST /post HTTP/1.1" 201
+2024-06-18T03:07:52.852Z | INFO     | :storeapi.routers.post:39 - Getting all posts
+2024-06-18T03:07:52.855Z | DEBUG    | :storeapi.routers.post:42 - SELECT posts.id, posts.body 
+FROM posts
+2024-06-18T03:07:52.860Z | INFO     | :uvicorn.access:481 - 127.0.0.1:61748 - "GET /post HTTP/1.1" 200
+2024-06-18T03:08:42.332Z | INFO     | :uvicorn.access:481 - 127.0.0.1:61800 - "GET /post/0/comments HTTP/1.1" 404
+2024-06-18T03:08:58.865Z | INFO     | :storeapi.routers.post:63 - Getting comments on post with id 0
+2024-06-18T03:08:58.867Z | DEBUG    | :storeapi.routers.post:67 - SELECT comments.id, comments.body, comments.post_id 
+FROM comments 
+WHERE comments.post_id = :post_id_1
+2024-06-18T03:08:58.871Z | INFO     | :uvicorn.access:481 - 127.0.0.1:61819 - "GET /post/0/comment HTTP/1.1" 200

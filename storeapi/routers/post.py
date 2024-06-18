@@ -1,3 +1,5 @@
+import logging
+
 from fastapi import APIRouter, HTTPException
 
 from storeapi.database import comment_table, database, post_table
@@ -11,9 +13,16 @@ from storeapi.models.post import (
 
 router = APIRouter()
 
+logger = logging.getLogger(__name__)
+
 
 async def find_post(post_id: int):
+    logger.info(f"Finding post with id {post_id}")
+
     query = post_table.select().where(post_table.c.id == post_id)
+
+    logger.debug(query)
+
     return await database.fetch_one(query)
 
 
@@ -27,7 +36,11 @@ async def create_post(post: UserPostIn):
 
 @router.get("/post", response_model=list[UserPost])
 async def get_all_posts():
+    logger.info("Getting all posts")
     query = post_table.select()
+
+    logger.debug(query)
+
     return await database.fetch_all(query)
 
 
@@ -35,6 +48,7 @@ async def get_all_posts():
 async def create_comment(comment: CommentIn):
     post = await find_post(comment.post_id)
     if not post:
+        logger.error(f"Post with id {comment.post_id} not found")
         raise HTTPException(status_code=404, detail="Post not found")
 
     data = comment.model_dump()
@@ -46,14 +60,22 @@ async def create_comment(comment: CommentIn):
 
 @router.get("/post/{post_id}/comment", response_model=list[Comment])
 async def get_comments_on_post(post_id: int):
+    logger.info(f"Getting comments on post with id {post_id}")
+
     query = comment_table.select().where(comment_table.c.post_id == post_id)
+
+    logger.debug(query)
+
     return await database.fetch_all(query)
 
 
 @router.get("/post/{post_id}", response_model=UserPostWithComments)
 async def get_post_with_comments(post_id: int):
+    logger.info(f"Getting post with id {post_id}")
+
     post = await find_post(post_id)
     if not post:
+        logger.error(f"Post with id {post_id} not found")
         raise HTTPException(status_code=404, detail="Post not found")
 
     return {
