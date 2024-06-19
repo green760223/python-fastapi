@@ -109,3 +109,35 @@ FROM posts
 {"asctime": "2024-06-19T01:25:58", "msecs": 957.0, "levelname": "INFO", "correlation_id": "205c4913", "name": "storeapi.routers.post", "lineno": 39, "message": "Getting all posts"}
 {"asctime": "2024-06-19T01:25:58", "msecs": 960.0, "levelname": "DEBUG", "correlation_id": "205c4913", "name": "storeapi.routers.post", "lineno": 42, "message": "SELECT posts.id, posts.body \nFROM posts"}
 {"asctime": "2024-06-19T01:25:58", "msecs": 964.0, "levelname": "INFO", "correlation_id": "205c4913", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:57494 - \"GET /post HTTP/1.1\" 200"}
+{"asctime": "2024-06-19T01:33:09", "msecs": 241.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 19, "message": "Hello world"}
+{"asctime": "2024-06-19T01:33:09", "msecs": 244.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-19T01:33:12", "msecs": 697.0, "levelname": "INFO", "correlation_id": "a8e1c1e6", "name": "storeapi.routers.post", "lineno": 39, "message": "Getting all posts"}
+{"asctime": "2024-06-19T01:33:12", "msecs": 702.0, "levelname": "DEBUG", "correlation_id": "a8e1c1e6", "name": "storeapi.routers.post", "lineno": 42, "message": "SELECT posts.id, posts.body \nFROM posts"}
+{"asctime": "2024-06-19T01:33:12", "msecs": 706.0, "levelname": "INFO", "correlation_id": "a8e1c1e6", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:58022 - \"GET /post HTTP/1.1\" 200"}
+{"asctime": "2024-06-19T01:33:40", "msecs": 77.0, "levelname": "INFO", "correlation_id": "2e2fb1f9", "name": "storeapi.routers.post", "lineno": 39, "message": "Getting all posts"}
+{"asctime": "2024-06-19T01:33:40", "msecs": 80.0, "levelname": "DEBUG", "correlation_id": "2e2fb1f9", "name": "storeapi.routers.post", "lineno": 42, "message": "SELECT posts.id, posts.body \nFROM posts"}
+{"asctime": "2024-06-19T01:33:40", "msecs": 82.0, "levelname": "INFO", "correlation_id": "2e2fb1f9", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:58064 - \"GET /post HTTP/1.1\" 200"}
+{"asctime": "2024-06-19T01:36:01", "msecs": 494.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 258, "message": "Shutting down"}
+{"asctime": "2024-06-19T01:36:01", "msecs": 600.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2024-06-19T01:36:01", "msecs": 602.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2024-06-19T01:36:01", "msecs": 603.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 92, "message": "Finished server process [27058]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2024-06-19T01:36:02", "msecs": 456.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 19, "message": "Hello world"}
+{"asctime": "2024-06-19T01:36:02", "msecs": 459.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-19T01:39:20", "msecs": 761.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 258, "message": "Shutting down"}
+{"asctime": "2024-06-19T01:39:20", "msecs": 869.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2024-06-19T01:39:20", "msecs": 870.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2024-06-19T01:39:20", "msecs": 871.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 92, "message": "Finished server process [27856]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2024-06-19T01:39:21", "msecs": 584.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 19, "message": "Hello world"}
+{"asctime": "2024-06-19T01:39:21", "msecs": 586.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-19T01:39:47", "msecs": 758.0, "levelname": "INFO", "correlation_id": "10f85e3c", "name": "storeapi.routers.post", "lineno": 39, "message": "Getting all posts"}
+{"asctime": "2024-06-19T01:39:47", "msecs": 762.0, "levelname": "DEBUG", "correlation_id": "10f85e3c", "name": "storeapi.routers.post", "lineno": 42, "message": "SELECT posts.id, posts.body \nFROM posts"}
+{"asctime": "2024-06-19T01:39:47", "msecs": 766.0, "levelname": "INFO", "correlation_id": "10f85e3c", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:58483 - \"GET /post HTTP/1.1\" 200"}
+{"asctime": "2024-06-19T01:40:12", "msecs": 843.0, "levelname": "INFO", "correlation_id": "49bb4410", "name": "storeapi.routers.post", "lineno": 39, "message": "Getting all posts"}
+{"asctime": "2024-06-19T01:40:12", "msecs": 846.0, "levelname": "DEBUG", "correlation_id": "49bb4410", "name": "storeapi.routers.post", "lineno": 42, "message": "SELECT posts.id, posts.body \nFROM posts"}
+{"asctime": "2024-06-19T01:40:12", "msecs": 849.0, "levelname": "INFO", "correlation_id": "49bb4410", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:58521 - \"GET /post HTTP/1.1\" 200"}
+{"asctime": "2024-06-19T01:40:37", "msecs": 572.0, "levelname": "INFO", "correlation_id": "f7cf47b7", "name": "storeapi.routers.post", "lineno": 39, "message": "Getting all posts"}
+{"asctime": "2024-06-19T01:40:37", "msecs": 574.0, "levelname": "DEBUG", "correlation_id": "f7cf47b7", "name": "storeapi.routers.post", "lineno": 42, "message": "SELECT posts.id, posts.body \nFROM posts"}
+{"asctime": "2024-06-19T01:40:37", "msecs": 578.0, "levelname": "INFO", "correlation_id": "f7cf47b7", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:58556 - \"GET /post HTTP/1.1\" 200"}
+{"asctime": "2024-06-19T01:41:04", "msecs": 910.0, "levelname": "INFO", "correlation_id": "df64f643", "name": "storeapi.routers.post", "lineno": 39, "message": "Getting all posts"}
+{"asctime": "2024-06-19T01:41:04", "msecs": 912.0, "levelname": "DEBUG", "correlation_id": "df64f643", "name": "storeapi.routers.post", "lineno": 42, "message": "SELECT posts.id, posts.body \nFROM posts"}
+{"asctime": "2024-06-19T01:41:04", "msecs": 916.0, "levelname": "INFO", "correlation_id": "df64f643", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:58602 - \"GET /post HTTP/1.1\" 200"}

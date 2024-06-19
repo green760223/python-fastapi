@@ -1,7 +1,7 @@
 import logging
 from logging.config import dictConfig
 
-from storeapi.config import DevConfig, config
+from storeapi.config import DevConfig, ProdConfig, config
 
 
 def obfuscated(email: str, obfuscated_length: int) -> str:
@@ -24,7 +24,7 @@ class EmailObfuscationFilter(logging.Filter):
 
 # The logtail handler is only used in production.
 handlers = ["default", "rotating_file"]
-if isinstance(config, DevConfig):
+if isinstance(config, ProdConfig):
     handlers = ["default", "rotating_file", "logtail"]
 
 
