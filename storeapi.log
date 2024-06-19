@@ -84,3 +84,17 @@ FROM posts
 FROM comments 
 WHERE comments.post_id = :post_id_1
 2024-06-18T03:08:58.871Z | INFO     | :uvicorn.access:481 - 127.0.0.1:61819 - "GET /post/0/comment HTTP/1.1" 200
+2024-06-19T00:50:04.756Z | INFO     | [-] :storeapi.main:19 - Hello world
+2024-06-19T00:50:04.759Z | INFO     | [-] :uvicorn.error:62 - Application startup complete.
+2024-06-19T00:50:50.211Z | INFO     | [57560980] :storeapi.routers.post:39 - Getting all posts
+2024-06-19T00:50:50.214Z | DEBUG    | [57560980] :storeapi.routers.post:42 - SELECT posts.id, posts.body 
+FROM posts
+2024-06-19T00:50:50.220Z | INFO     | [57560980] :uvicorn.access:481 - 127.0.0.1:54918 - "GET /post HTTP/1.1" 200
+2024-06-19T00:51:36.484Z | INFO     | [55dbf7fd] :storeapi.routers.post:39 - Getting all posts
+2024-06-19T00:51:36.486Z | DEBUG    | [55dbf7fd] :storeapi.routers.post:42 - SELECT posts.id, posts.body 
+FROM posts
+2024-06-19T00:51:36.489Z | INFO     | [55dbf7fd] :uvicorn.access:481 - 127.0.0.1:54979 - "GET /post HTTP/1.1" 200
+2024-06-19T00:51:53.656Z | INFO     | [ebba158d] :storeapi.routers.post:39 - Getting all posts
+2024-06-19T00:51:53.658Z | DEBUG    | [ebba158d] :storeapi.routers.post:42 - SELECT posts.id, posts.body 
+FROM posts
+2024-06-19T00:51:53.660Z | INFO     | [ebba158d] :uvicorn.access:481 - 127.0.0.1:54998 - "GET /post HTTP/1.1" 200
