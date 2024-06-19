@@ -98,3 +98,9 @@ FROM posts
 2024-06-19T00:51:53.658Z | DEBUG    | [ebba158d] :storeapi.routers.post:42 - SELECT posts.id, posts.body 
 FROM posts
 2024-06-19T00:51:53.660Z | INFO     | [ebba158d] :uvicorn.access:481 - 127.0.0.1:54998 - "GET /post HTTP/1.1" 200
+{"asctime": "2024-06-19T00:57:56", "msecs": 428.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 19, "message": "Hello world"}
+{"asctime": "2024-06-19T00:57:56", "msecs": 430.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-19T00:58:40", "msecs": 645.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 258, "message": "Shutting down"}
+{"asctime": "2024-06-19T00:58:40", "msecs": 750.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2024-06-19T00:58:40", "msecs": 755.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2024-06-19T00:58:40", "msecs": 757.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 92, "message": "Finished server process [16112]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
