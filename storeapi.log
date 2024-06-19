@@ -104,3 +104,8 @@ FROM posts
 {"asctime": "2024-06-19T00:58:40", "msecs": 750.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
 {"asctime": "2024-06-19T00:58:40", "msecs": 755.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
 {"asctime": "2024-06-19T00:58:40", "msecs": 757.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 92, "message": "Finished server process [16112]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2024-06-19T01:25:45", "msecs": 159.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 19, "message": "Hello world"}
+{"asctime": "2024-06-19T01:25:45", "msecs": 162.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-19T01:25:58", "msecs": 957.0, "levelname": "INFO", "correlation_id": "205c4913", "name": "storeapi.routers.post", "lineno": 39, "message": "Getting all posts"}
+{"asctime": "2024-06-19T01:25:58", "msecs": 960.0, "levelname": "DEBUG", "correlation_id": "205c4913", "name": "storeapi.routers.post", "lineno": 42, "message": "SELECT posts.id, posts.body \nFROM posts"}
+{"asctime": "2024-06-19T01:25:58", "msecs": 964.0, "levelname": "INFO", "correlation_id": "205c4913", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:57494 - \"GET /post HTTP/1.1\" 200"}
