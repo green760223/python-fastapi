@@ -141,3 +141,64 @@ FROM posts
 {"asctime": "2024-06-19T01:41:04", "msecs": 910.0, "levelname": "INFO", "correlation_id": "df64f643", "name": "storeapi.routers.post", "lineno": 39, "message": "Getting all posts"}
 {"asctime": "2024-06-19T01:41:04", "msecs": 912.0, "levelname": "DEBUG", "correlation_id": "df64f643", "name": "storeapi.routers.post", "lineno": 42, "message": "SELECT posts.id, posts.body \nFROM posts"}
 {"asctime": "2024-06-19T01:41:04", "msecs": 916.0, "levelname": "INFO", "correlation_id": "df64f643", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:58602 - \"GET /post HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:26:26", "msecs": 790.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 20, "message": "Hello world"}
+{"asctime": "2024-06-24T02:26:26", "msecs": 793.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-24T02:26:41", "msecs": 45.0, "levelname": "INFO", "correlation_id": "4268a722", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:60156 - \"GET /doc HTTP/1.1\" 404"}
+{"asctime": "2024-06-24T02:26:41", "msecs": 126.0, "levelname": "INFO", "correlation_id": "f2b50542", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:60156 - \"GET /favicon.ico HTTP/1.1\" 404"}
+{"asctime": "2024-06-24T02:26:59", "msecs": 6.0, "levelname": "INFO", "correlation_id": "0bce995e", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:60202 - \"GET /docs HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:26:59", "msecs": 404.0, "levelname": "INFO", "correlation_id": "0ba97ab6", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:60202 - \"GET /openapi.json HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:28:41", "msecs": 201.0, "levelname": "DEBUG", "correlation_id": "b751d0e1", "name": "storeapi.security", "lineno": 54, "message": "Fetching user from the database", "email": "jo**@example.com"}
+{"asctime": "2024-06-24T02:28:41", "msecs": 487.0, "levelname": "DEBUG", "correlation_id": "b751d0e1", "name": "storeapi.routers.user", "lineno": 29, "message": "INSERT INTO users (email, password) VALUES (:email, :password)"}
+{"asctime": "2024-06-24T02:28:41", "msecs": 490.0, "levelname": "INFO", "correlation_id": "b751d0e1", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:60312 - \"POST /register HTTP/1.1\" 201"}
+{"asctime": "2024-06-24T02:31:20", "msecs": 159.0, "levelname": "DEBUG", "correlation_id": "cfe1684d", "name": "storeapi.security", "lineno": 63, "message": "Authenticating user", "email": "jo**@example.com"}
+{"asctime": "2024-06-24T02:31:20", "msecs": 163.0, "levelname": "DEBUG", "correlation_id": "cfe1684d", "name": "storeapi.security", "lineno": 54, "message": "Fetching user from the database", "email": "jo**@example.com"}
+{"asctime": "2024-06-24T02:31:20", "msecs": 412.0, "levelname": "DEBUG", "correlation_id": "cfe1684d", "name": "storeapi.security", "lineno": 31, "message": "Creating access token", "email": "jo**@example.com"}
+{"asctime": "2024-06-24T02:31:20", "msecs": 413.0, "levelname": "INFO", "correlation_id": "cfe1684d", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:60490 - \"POST /token HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:36:16", "msecs": 24.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 258, "message": "Shutting down"}
+{"asctime": "2024-06-24T02:36:16", "msecs": 127.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2024-06-24T02:36:16", "msecs": 128.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2024-06-24T02:36:16", "msecs": 129.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 92, "message": "Finished server process [82658]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2024-06-24T02:36:16", "msecs": 893.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 20, "message": "Hello world"}
+{"asctime": "2024-06-24T02:36:16", "msecs": 909.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-24T02:36:49", "msecs": 229.0, "levelname": "DEBUG", "correlation_id": "b5490b13", "name": "storeapi.security", "lineno": 63, "message": "Authenticating user", "email": "jo**@example.com"}
+{"asctime": "2024-06-24T02:36:49", "msecs": 231.0, "levelname": "DEBUG", "correlation_id": "b5490b13", "name": "storeapi.security", "lineno": 54, "message": "Fetching user from the database", "email": "jo**@example.com"}
+{"asctime": "2024-06-24T02:36:49", "msecs": 508.0, "levelname": "DEBUG", "correlation_id": "b5490b13", "name": "storeapi.security", "lineno": 31, "message": "Creating access token", "email": "jo**@example.com"}
+{"asctime": "2024-06-24T02:36:49", "msecs": 509.0, "levelname": "INFO", "correlation_id": "b5490b13", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:60881 - \"POST /token HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:41:27", "msecs": 306.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 258, "message": "Shutting down"}
+{"asctime": "2024-06-24T02:41:27", "msecs": 411.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2024-06-24T02:41:27", "msecs": 412.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2024-06-24T02:41:27", "msecs": 413.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 92, "message": "Finished server process [85423]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2024-06-24T02:41:28", "msecs": 150.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 20, "message": "Hello world"}
+{"asctime": "2024-06-24T02:41:28", "msecs": 166.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-24T02:41:39", "msecs": 710.0, "levelname": "INFO", "correlation_id": "db11378a", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:61249 - \"GET /docs HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:41:39", "msecs": 864.0, "levelname": "INFO", "correlation_id": "963c16f4", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:61249 - \"GET /openapi.json HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:42:11", "msecs": 844.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 258, "message": "Shutting down"}
+{"asctime": "2024-06-24T02:42:11", "msecs": 947.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2024-06-24T02:42:11", "msecs": 952.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2024-06-24T02:42:11", "msecs": 954.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 92, "message": "Finished server process [86850]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2024-06-24T02:42:12", "msecs": 678.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 20, "message": "Hello world"}
+{"asctime": "2024-06-24T02:42:12", "msecs": 697.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-24T02:42:14", "msecs": 451.0, "levelname": "INFO", "correlation_id": "b161f10b", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:61309 - \"GET /docs HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:42:14", "msecs": 578.0, "levelname": "INFO", "correlation_id": "400f8788", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:61309 - \"GET /openapi.json HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:42:25", "msecs": 434.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 258, "message": "Shutting down"}
+{"asctime": "2024-06-24T02:42:25", "msecs": 537.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2024-06-24T02:42:25", "msecs": 538.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2024-06-24T02:42:25", "msecs": 539.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 92, "message": "Finished server process [87077]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2024-06-24T02:42:26", "msecs": 233.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 20, "message": "Hello world"}
+{"asctime": "2024-06-24T02:42:26", "msecs": 248.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-24T02:42:36", "msecs": 807.0, "levelname": "INFO", "correlation_id": "3125d338", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:61337 - \"GET /docs HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:42:36", "msecs": 947.0, "levelname": "INFO", "correlation_id": "0efed87d", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:61337 - \"GET /openapi.json HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:43:43", "msecs": 734.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 258, "message": "Shutting down"}
+{"asctime": "2024-06-24T02:43:43", "msecs": 838.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2024-06-24T02:43:43", "msecs": 840.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2024-06-24T02:43:43", "msecs": 841.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 92, "message": "Finished server process [87154]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2024-06-24T02:43:44", "msecs": 469.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 20, "message": "Hello world"}
+{"asctime": "2024-06-24T02:43:44", "msecs": 486.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}
+{"asctime": "2024-06-24T02:43:45", "msecs": 347.0, "levelname": "INFO", "correlation_id": "f16ae45b", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:61416 - \"GET /docs HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:43:45", "msecs": 453.0, "levelname": "INFO", "correlation_id": "4525fdca", "name": "uvicorn.access", "lineno": 481, "message": "127.0.0.1:61416 - \"GET /openapi.json HTTP/1.1\" 200"}
+{"asctime": "2024-06-24T02:44:22", "msecs": 6.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 258, "message": "Shutting down"}
+{"asctime": "2024-06-24T02:44:22", "msecs": 110.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 67, "message": "Waiting for application shutdown."}
+{"asctime": "2024-06-24T02:44:22", "msecs": 114.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 76, "message": "Application shutdown complete."}
+{"asctime": "2024-06-24T02:44:22", "msecs": 116.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 92, "message": "Finished server process [87513]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2024-06-24T02:44:22", "msecs": 767.0, "levelname": "INFO", "correlation_id": "-", "name": "storeapi.main", "lineno": 20, "message": "Hello world"}
+{"asctime": "2024-06-24T02:44:22", "msecs": 784.0, "levelname": "INFO", "correlation_id": "-", "name": "uvicorn.error", "lineno": 62, "message": "Application startup complete."}

@@ -1,6 +1,8 @@
 import logging
+from typing import Annotated
 
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi.security import OAuth2PasswordRequestForm
 
 from storeapi.database import database, user_table
 from storeapi.models.user import UserIn
@@ -31,6 +33,15 @@ async def register(user: UserIn):
     await database.execute(query)
 
     return {"detail": "User created successfully"}
+
+
+# For swagger test purposes
+@router.post("/swaggertoken")
+async def login_swagger(form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
+    user = await authenticate_user(form_data.username, form_data.password)
+    access_token = create_access_token(user.email)
+
+    return {"access_token": access_token, "token_type": "bearer"}
 
 
 @router.post("/token")

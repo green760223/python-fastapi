@@ -10,7 +10,7 @@ async def register_user(async_client: AsyncClient, email: str, password: str) ->
 
 @pytest.mark.anyio
 async def test_register_user(async_client: AsyncClient):
-    response = await register_user(async_client, "test@exmple.net", "1234")
+    response = await register_user(async_client, "test@example.net", "1234")
     assert response.status_code == 201
     assert "User created" in response.json()["detail"]
 
@@ -46,5 +46,3 @@ async def test_login_user(async_client: AsyncClient, registered_user: dict):
     )
 
     assert response.status_code == 200
-    # assert "access_token" in response.json()
-    # assert response.json()["token_type"] == "bearer"
