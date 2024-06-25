@@ -27,3 +27,12 @@ class Comment(CommentIn):
 class UserPostWithComments(BaseModel):
     comments: list[Comment]
     post: UserPost
+
+
+class PostLikeIn(BaseModel):
+    post_id: int
+
+
+class PostLike(PostLikeIn):
+    id: int
+    user_id: int
