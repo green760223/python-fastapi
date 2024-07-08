@@ -48,7 +48,7 @@ def create_access_token(email: str):
 def create_confirmation_token(email: str):
     logger.debug("Creating confirmation token", extra={"email": email})
     expire = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(
-        minutes=access_token_expire_minutes()
+        minutes=confirm_token_expire_minutes()
     )
 
     jwt_data = {"sub": email, "exp": expire, "type": "confirmation"}
