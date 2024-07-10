@@ -1,9 +1,10 @@
 import logging
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, HTTPException, Request, status
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Request, status
 from fastapi.security import OAuth2PasswordRequestForm
 
+from storeapi import tasks
 from storeapi.database import database, user_table
 from storeapi.models.user import UserIn
 from storeapi.security import (
@@ -20,7 +21,7 @@ router = APIRouter()
 
 
 @router.post("/register", status_code=status.HTTP_201_CREATED)
-async def register(user: UserIn, request: Request):
+async def register(user: UserIn, request: Request, background_tasks: BackgroundTasks):
     if await get_user(user.email):
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -33,13 +34,14 @@ async def register(user: UserIn, request: Request):
     logger.debug(query)
 
     await database.execute(query)
-
-    return {
-        "detail": "User created. Please confirm your email.",
-        "confirmation_url": request.url_for(
+    background_tasks.add_task(
+        tasks.send_user_registration_email,
+        user.email,
+        confirmation_url=request.url_for(
             "confirm_email", token=create_confirmation_token(user.email)
         ),
-    }
+    )
+    return {"detail": "User created. Please confirm your email."}
 
 
 # For swagger test purposes
