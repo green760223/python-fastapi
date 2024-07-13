@@ -13,3 +13,5 @@ python-multipart
 passlib[bcrypt]
 aiofiles
 b2sdk
+psycopg2
+databases[asyncpg]
