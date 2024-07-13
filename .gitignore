@@ -1,6 +1,6 @@
 .DS_Store
 *.pyc
-__pycache__/
+__pycache__
 .env
 .env.example
 *.db
@@ -8,3 +8,4 @@ venv
 .venv
 .vscode/
 *.png
+*.log
