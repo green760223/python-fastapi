@@ -55,6 +55,11 @@ app.include_router(upload_router)
 #     return division_by_zero
 
 
+@app.get("/")
+async def health_check():
+    return "The API service is running!"
+
+
 # The exception handler logs the exception and then calls the default exception handler.
 @app.exception_handler(HTTPException)
 async def http_exception_handler_logging(request, exc):
