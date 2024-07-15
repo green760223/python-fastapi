@@ -13,6 +13,6 @@ python-multipart
 passlib[bcrypt]
 aiofiles
 b2sdk
-psycopg2
+psycopg2-binary
 databases[asyncpg]
 sentry-sdk[fastapi]
