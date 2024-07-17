@@ -33,10 +33,20 @@ async def send_simple_email(to: str, subject: str, body: str):
             logger.debug(response.content)
 
             return response
+        # except httpx.HTTPStatusError as err:
+        #     raise APIResponseError(
+        #         f"API request failed with status code {err.response.status_code}"
+        #     ) from err
         except httpx.HTTPStatusError as err:
+            logger.error(
+                f"HTTP error occurred: {err.response.status_code} - {err.response.content}"
+            )
             raise APIResponseError(
                 f"API request failed with status code {err.response.status_code}"
             ) from err
+        except Exception as e:
+            logger.error(f"An unexpected error occurred: {e}")
+            raise
 
 
 async def send_user_registration_email(email: str, confirmation_url: str):

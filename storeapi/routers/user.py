@@ -45,7 +45,7 @@ async def register(user: UserIn, request: Request, background_tasks: BackgroundT
 
 
 # For swagger test purposes
-@router.post("/swaggertoken")
+@router.post("/token")
 async def login_swagger(form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
     user = await authenticate_user(form_data.username, form_data.password)
     access_token = create_access_token(user.email)
@@ -53,7 +53,7 @@ async def login_swagger(form_data: Annotated[OAuth2PasswordRequestForm, Depends(
     return {"access_token": access_token, "token_type": "bearer"}
 
 
-@router.post("/token")
+@router.post("/api-token")
 async def login(user: UserIn):
     user = await authenticate_user(user.email, user.password)
     access_token = create_access_token(user.email)
