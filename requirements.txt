@@ -16,3 +16,4 @@ b2sdk
 psycopg2-binary
 databases[asyncpg]
 sentry-sdk[fastapi]
+httpx
